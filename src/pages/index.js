@@ -46,26 +46,27 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="pt-16">
         <div className="flex flex-row ">
           <div className="w-full" style={{
-            "backgroundImage": 'url("https://trustlogworkshop.github.io/images/index.jpg")',
+            "backgroundImage": 'url("https://aaai.org/Conferences/AAAI-23/wp-content/uploads/2022/06/AAAI-23-Website-Banner_2560x593.png")',
             "height": "50vh",
             "backgroundRepeat": "no-repeat",
             "backgroundPosition": "center",
             "backgroundSize": "cover",
             "paddingTop": "22vh"
           }}>
-            <div className="text-white text-4xl font-semibold text-center">
-              The First Workshop on DL-Hardware Co-Design for AI Acceleration
-            </div>
-            <div className="text-white text-center mt-2">
-              Colocated with the <span className="underline">37th AAAI Conference on Artificial Intelligence</span>
-            </div>
           </div>
         </div>
 
-        <div id="cfp" style={{"background":"#f5f5f5"}}>
+        <div id="cfp" style={{"background":"#f5f5f5"}} className="pt-10">
+          <div className="text-black text-4xl font-semibold text-center">
+            The First Workshop on DL-Hardware Co-Design for AI Acceleration
+          </div>
+          <div className="text-black text-center mt-2">
+            Colocated with the <a href="https://aaai.org/Conferences/AAAI-23/" className="underline">37th AAAI Conference on Artificial Intelligence</a>
+          </div>
+
           <div className="max-w-screen-md max-w-screen-lg mx-auto px-2 py-10">
             <div className="mt-5 text-xl text-gray-600 text-justify">
               <div className="text-4xl">Call for papers</div>
@@ -90,55 +91,25 @@ const IndexPage = () => {
               Submitted technical papers can be up to 4 pages long (excluding references and appendices). Position papers are welcome. All papers must be submitted in PDF format using the AAAI-23 author kit. Papers will be peer-reviewed and selected for spotlight and/or poster presentation.Submission site: 
               <div><a className="text-blue-600" href="https://cmt3.research.microsoft.com/DCAA2023/Submission/Index">https://cmt3.research.microsoft.com/DCAA2023/Submission/Index</a></div>
               </div>
+
+              <div className="text-2xl mt-5">Important Dates (GMT)</div>
+              <div className="mt-5 leading-8 flex">
+                <div className="flex-1">
+                  <div>Paper Submission Deadline</div>
+                  <div>Notification of Acceptance</div>
+                  <div>Camera-Reday Deadline</div>
+                  <div>Workshop Date</div>
+                </div>
+                <div className="flex-1">
+                  <div>November 4, 2022</div>
+                  <div>November 18, 2022</div>
+                  <div>TBD</div>
+                  <div>TBD</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-        {/* <div style={{"background":"#f5f5f5"}}>
-          <div className="max-w-screen-md max-w-screen-lg mx-auto px-2 py-10 text-xl">
-            <div className="text-4xl">Call for papers</div>
-            <div className="mt-5">
-              <div>We invite submissions on a broad range of hardware co-design for AI acceleration. We welcome many types of papers, such as (but are not limited to):</div>
-              <ul className="list-disc pl-5 mt-5">
-                <li>Research papers</li>
-                <li>Work-in-progress papers</li>
-                <li>Demo papers</li>
-                <li>Visionary papers/white papers</li>
-                <li>Appraisal papers of existing methods or tools</li>
-                <li>Evaluatory papers on assumptions, methods or tools</li>
-                <li>Relevant work that will be or have been published</li>
-              </ul>
-
-              <div className="mt-5">Topics of interests include (but are not limited to):</div>
-              <ul className="list-disc pl-5 mt-5">
-                <li>Safety and robustness</li>
-                <li>Interpretability, explainability and transparency</li>
-                <li>Ethics</li>
-                <li>Accountability</li>
-                <li>Privacy preservation</li>
-                <li>Causal analysis</li>
-                <li>Environmental well-being</li>
-              </ul>       
-
-              <div className="mt-5">Important Dates</div>
-              <ul className="list-disc pl-5 mt-5">
-                <li>Recommended paper submission deadline: September 2, 2022(full consideration)</li>
-                <li>Dynamic submission window: September 3, 2022 ~ October 10, 2022(closed after pool is filled)</li>
-                <li>Reviews period: September 11 - September 25, 2022</li>
-                <li>Final notification: October 2, 2022</li>
-                <li>Camera-ready submission: October 15, 2022</li>
-                <li>Workshop day: October 21, 2022</li>
-              </ul>
-  
-              <div className="text-2xl mt-5">Paper Submission</div>
-              <div className="mt-5">Paper submissions are limited to a total of 5 pages for initial submission(up to 6 pages for final camera-ready submission), plus references or supplementary materials, and authors should only rely on the supplementary material to include minor details that do not fit in the 5-page main body. Manuscripts should be submitted in PDF format, using the AAAI 2-column sigconf template. Paper reviews will be double-blind, and submissions that are not properly anonymized will be desk-rejected without review. Submitted papers will be assessed based on their novelty, technical quality, potential impact, and clarity of writing. For papers that rely heavily on empirical evaluations, the experimental methods and results should be clear, well executed, and repeatable. Authors are strongly encouraged to make data and code publicly available whenever possible. The accepted papers will be posted on the workshop website and will not be included in the CIKM proceedings. Special issues in flagship academic journals are under consideration to host the extended versions of best/selected papers in the workshop.</div>
-              <div className="mt-3">Please submit to CMT via this link</div>
-
-              <div className="text-2xl mt-5">AAAI Policy Against Discrimination</div>
-              <div className="mt-5">All authors and participants must adhere the the AAAI discrimination policy. For full details, please visit this site.As a published ACM author, you and your co-authors are subject to all ACM Publications Policies , including AAAI's new Publications Policy on Research Involving Human Participants and Subjects.</div>
-            </div>
-          </div>
-        </div> */}
 
         <div id="schedule" className="max-w-screen-md max-w-screen-lg mx-auto px-2 py-10 text-xl">
           <div className="text-4xl">Agenda (Tentative)</div>
@@ -149,42 +120,42 @@ const IndexPage = () => {
             <div className="flex border-b-2 pb-3">
               <div className="w-100">08:00am-08:10am</div>
               <div className="flex-1 text-center">Opening remarks</div>
-              <div className="w-100">Livestream (above)</div>
+              <div className="w-100">Livestream</div>
             </div>
             <div className="flex border-b-2 mt-3 pb-3">
               <div className="w-100">08:10am-08:40am</div>
               <div className="flex-1 text-center">Invited talk 1</div>
-              <div className="w-100">Livestream (above)</div>
+              <div className="w-100">Livestream</div>
             </div>
             <div className="flex border-b-2 mt-3 pb-3">
               <div className="w-100">08:40am-09:10am</div>
               <div className="flex-1 text-center">Lightning talks of invited papers and social networking of participants</div>
-              <div className="w-100">Livestream (above)</div>
+              <div className="w-100">Livestream</div>
             </div> 
             <div className="flex border-b-2 mt-3 pb-3">
               <div className="w-100">08:40am-09:30am</div>
               <div className="flex-1 text-center">Paper presentations and discussion</div>
-              <div className="w-100">Livestream (above)</div>
+              <div className="w-100">Livestream</div>
             </div>
             <div className="flex border-b-2 mt-3 pb-3">
               <div className="w-100">09:30am-10:00am</div>
               <div className="flex-1 text-center">Coffee break</div>
-              <div className="w-100">Livestream (above)</div>
+              <div className="w-100">Livestream</div>
             </div>
             <div className="flex border-b-2 mt-3 pb-3">
               <div className="w-100">10:00am-10:30am</div>
               <div className="flex-1 text-center">Poster sessions</div>
-              <div className="w-100">Livestream (above)</div>
+              <div className="w-100">Livestream</div>
             </div>
             <div className="flex border-b-2 mt-3 pb-3">
               <div className="w-100">10:30am-11:00am</div>
               <div className="flex-1 text-center">Invited talk 2</div>
-              <div className="w-100">Livestream (above)</div>
+              <div className="w-100">Livestream</div>
             </div>
             <div className="flex border-b-2 mt-3 pb-3">
               <div className="w-100">11:00am-12:00am</div>
               <div className="flex-1 text-center">Panel discussion</div>
-              <div className="w-100">Livestream (above)</div>
+              <div className="w-100">Livestream</div>
             </div>
             <div className="flex border-b-2 mt-3 pb-3">
               <div className="w-100">End</div>
@@ -230,34 +201,30 @@ const IndexPage = () => {
         </div>
 
         <div id="organizers" className="max-w-screen-md max-w-screen-lg mx-auto px-2 py-10 text-xl">
-          <div className="text-4xl">Organizers</div>
+          <div className="text-4xl">Organizing Chairs</div>
           <div className="mt-10">
-            <div className="flex text-center">
+            <div className="flex text-center mt-10">
               <div className="flex-1">
-                <img className="w-1/2 m-auto" src="" />
-                <div className="mt-3">Dongkuan Xu</div>
+                <div className="h-48 overflow-hidden">
+                  <img className="w-1/2 m-auto" src="https://github.com/mexiQQ/trust-ai-code/blob/main/src/images/dongkuan.jpg?raw=true" />
+                </div>
+                <div className="mt-3"><a className="text-blue-600" href="http://personal.psu.edu/dux19/">Dongkuan(DK) Xu</a></div>
                 <div>Assistant Professor</div>
                 <div>North Carolina State University</div>
               </div>
-            </div>
-            <div className="flex text-center">
               <div className="flex-1">
-                <img className="w-1/2 m-auto" src="https://i0.wp.com/eiclab.net/wp-content/uploads/2019/09/Yingyan_Lin_Profile.jpg?resize=250%2C216&ssl=1" />
-                <div className="mt-3">Yingyan (Celine) Lin</div>
-                <div>Associate Professor</div>
-                <div>Georgia Institute of Technology</div>
-              </div>
-              <div className="flex-1">
-                <div className=" overflow-hidden	">
-                  <img className="w-1/2 m-auto" src="https://coe.northeastern.edu/wp-content/uploads/profiles/ece/wang-y.jpg" />
+                <div className="h-48 overflow-hidden">
+                  <img className="w-1/2 m-auto" src="https://www6.njit.edu/uws/ldapimage.php?uid=hw32&format=full" />
                 </div>
-                <div className="mt-3">Yanzhi Wang</div>
-                <div>Associate Professor</div>
-                <div>Northeastern University</div> 
+                <div className="mt-3"><a className="text-blue-600" href="https://people.njit.edu/faculty/hw32#about">Hua Wei</a></div>
+                <div>Assistant Professor</div>
+                <div>New Jersey Institute of Technology</div>
               </div>
               <div className="flex-1">
-                <img className="w-1/2 m-auto" src="https://www.ang-li.com/images/profile.png" />
-                <div className="mt-3">Ang Li</div>
+                <div className="h-48 overflow-hidden">
+                  <img className="w-1/2 m-auto" src="https://www.ang-li.com/images/profile.png" />
+                </div>
+                <div className="mt-3"><a className="text-blue-600" href="https://www.ang-li.com/">Ang Li</a></div>
                 <div>Research Associate</div>
                 <div>Qualcomm AI Research</div> 
               </div>
@@ -265,26 +232,58 @@ const IndexPage = () => {
 
             <div className="flex text-center mt-10">
               <div className="flex-1">
-                <img className="w-1/2 m-auto" src="https://www6.njit.edu/uws/ldapimage.php?uid=hw32&format=full" />
-                <div className="mt-3">Hua Wei</div>
+                <div className="h-48 overflow-hidden">
+                  <img className="w-1/2 m-auto" src="https://github.com/mexiQQ/trust-ai-code/blob/main/src/images/peipei.jpeg?raw=true" />
+                </div>
+                <div className="mt-3"><a className="text-blue-600" href="https://peipeizhou-eecs.github.io/">Peipei Zhou</a></div>
                 <div>Assistant Professor</div>
-                <div>Pennsylvania State University</div>
-              </div>
+                <div>University of Pittsburgh</div> 
+              </div> 
               <div className="flex-1">
-                <img className="w-1/2 m-auto" src="https://caiwending.cse.uconn.edu/wp-content/uploads/sites/2888/2019/08/DSC_8595.jpg" />
-                <div className="mt-3">Caiwen Ding</div>
+                <div className="h-48 overflow-hidden">
+                  <img className="w-1/2 m-auto" src="https://caiwending.cse.uconn.edu/wp-content/uploads/sites/2888/2019/08/DSC_8595.jpg" />
+                </div>
+                <div className="mt-3"><a className="text-blue-600" href="https://caiwending.cse.uconn.edu/">Caiwen Ding</a></div>
                 <div>Assistant Professor</div>
                 <div>University of Connecticut</div> 
               </div>
               <div className="flex-1">
-                <img className="w-1/2 m-auto" src="" />
-                <div className="mt-3">Peipei Zhou</div>
-                <div>Assistant Professor</div>
-                <div>University of Pittsburgh</div> 
+                <div className="h-48 overflow-hidden">
+                  <img className="w-1/2 m-auto" src="https://i0.wp.com/eiclab.net/wp-content/uploads/2019/09/Yingyan_Lin_Profile.jpg?resize=250%2C216&ssl=1" />
+                </div>
+                <div className="mt-3"><a className="text-blue-600" href="https://eiclab.net/team-2/">Yingyan(Celine) Lin</a></div>
+                <div>Associate Professor</div>
+                <div>Georgia Institute of Technology</div>
               </div>
             </div>
           </div>
-        </div>
+
+          <div className="flex text-center mt-10">
+            <div className="flex-1">
+              <div className="h-48 overflow-hidden">
+                <img className="w-1/2 m-auto" src="https://coe.northeastern.edu/wp-content/uploads/profiles/ece/wang-y.jpg" />
+              </div>
+              <div className="mt-3"><a className="text-blue-600" href="https://coe.northeastern.edu/people/wang-yanzhi/">Yanzhi Wang</a></div>
+              <div>Associate Professor</div>
+              <div>Northeastern University</div> 
+            </div>
+            <div className="flex-1"></div>
+            <div className="flex-1"></div>
+          </div>
+
+          <div className="text-4xl mt-10">Publicity Chair</div>
+            <div className="flex text-center mt-10">
+              <div className="flex-1">
+                <div className="h-48 overflow-hidden">
+                  <img className="w-1/2 m-auto" src="https://github.com/mexiQQ/trust-ai-code/blob/main/src/images/jianwei.jpg?raw=true" />
+                </div>
+                <div className="mt-3"><a className="text-blue-600" href="https://jianwei.gatsbyjs.io/">Jianwei Li</a></div>
+                <div>Moffett.AI</div>
+              </div>
+              <div className="flex-1"></div>
+              <div className="flex-1"></div>
+            </div> 
+          </div>
 
         <div className="text-center py-10 text-sm text-gray-300 bg-black">
           <div>© 2022 NCSU DK Lab, All rights reserved</div>
