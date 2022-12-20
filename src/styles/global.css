@@ -6,7 +6,7 @@ html{
     scroll-padding-top: 60px;
 }
 
-.carousel .control-prev.control-arrow:before {
+/* .carousel .control-prev.control-arrow:before {
     border-right: 8px solid #000 !important;
 }
 
@@ -16,4 +16,4 @@ html{
 
 .carousel-status {
     display: none;
-}
+} */

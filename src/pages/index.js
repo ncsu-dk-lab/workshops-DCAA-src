@@ -1,6 +1,6 @@
 import * as React from "react"
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
+// import { Carousel } from 'react-responsive-carousel';
 
 // styles
 const pageStyles = {
@@ -191,12 +191,12 @@ const IndexPage = () => {
           <div className="max-w-screen-md max-w-screen-lg mx-auto px-2 py-10">
             <div className="text-4xl">Keynote Speakers</div>
             {/* <div className="w-full text-center h-96 p-36 text-3xl">To Be Confirmed</div> */}
-            <Carousel autoPlay infiniteLoop interval={3000} className="w-full text-center pt-12" 
+            {/* <Carousel autoPlay infiniteLoop interval={3000} className="w-full text-center pt-12" 
               showArrows={true} 
               onChange={()=>{}} 
               onClickItem={()=>{}} 
-              onClickThumb={()=>{}} >
-              <div className="w-full">
+              onClickThumb={()=>{}} > */}
+              <div className="w-full mt-10">
                 <div className="w-full md:h-96 md:flex">
                   <div className="md:flex-1">
                     <img className="w-48 h-96 object-cover	" 
@@ -211,19 +211,19 @@ const IndexPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full">
+              <div className="w-full mt-10">
                 <div className="w-full md:h-96 md:flex">
-                  <div className="md:flex-1">
-                    <img className="w-48 h-96 object-cover	" 
-                      style={{"width": "75%"}} 
-                      src="https://www.comp.nus.edu.sg/~youy/index_files/yangyou3.png"/>
-                  </div>
                   <div className="md:flex-1 md:text-left pt-20">
                     <div className="text-3xl">Yang You</div>
                     <div className="text-2xl mt-5">National University of Singapore</div>
                     <div className="text-2xl">Presidential Young Professor in Computer Science</div>
                     <div className="mt-2"><a className="text-xl text-blue-600" href="https://www.comp.nus.edu.sg/~youy/">Personal Website</a></div>
                   </div> 
+                  <div className="md:flex-1">
+                    <img className="w-48 h-96 object-cover	" 
+                      style={{"width": "75%"}} 
+                      src="https://www.comp.nus.edu.sg/~youy/index_files/yangyou3.png"/>
+                  </div>
                 </div>
               </div>
               {/* <div className="w-full">
@@ -231,7 +231,7 @@ const IndexPage = () => {
                   To Be Confirmed
                 </div>
               </div> */}
-            </Carousel> 
+            {/* </Carousel>  */}
             {/* <div className="flex mt-10">
               <div className="flex-1">
                 <img className="w-full" src="https://trustlogworkshop.github.io/images/nc.jpeg"/>
