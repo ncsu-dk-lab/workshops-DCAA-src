@@ -1,4 +1,6 @@
 import * as React from "react"
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 // styles
 const pageStyles = {
@@ -69,19 +71,21 @@ const IndexPage = () => {
 
           <div className="max-w-screen-md max-w-screen-lg mx-auto px-2 py-10">
             <div className="mt-5 text-xl px-3 md:px-0 md:text-justify ">
-              <div className="text-4xl">Call for Papers</div>
+              <div className="text-4xl">Call for Reviewers</div>
+              <div className="mt-5 leading-8">We are looking for reviewers for the first workshop on DL-Hardware Co-Design for AI Acceleration! If you would like to become a reviewer, please fill this <a className="text-blue-600" href="https://docs.google.com/forms/d/1KaQCnRqRpTo4UXkSCLxNVAovrr0cnNFW8MutD482h9c/edit">form</a>.</div> 
+              <div className="text-4xl mt-8">Call for Papers</div>
               <div className="mt-5 leading-8">As deep learning (DL) continues to permeate all areas of computing, algorithm engineers are increasingly relying on hardware system design solutions to improve the efficiency and performance of deep learning models. However, the vast majority of DL studies rarely consider limitations such as power/energy, memory footprint, and model size of real-world computing platforms, and even less consider the computational speed of hardware systems and their own computational characteristics. Addressing all of these metrics is critical if advances in DL are to be widely used on real device platforms and scenarios, especially those with high requirements for computational efficiencies, such as mobile devices and AR/VR. Therefore, it is desirable to design and optimize both the DL models and the hardware computing platforms. The workshop provides a great venue for the international research community to share mutual challenges and solutions between deep neural network learning and computing system platforms, with a focus on accelerating AI technologies on real system platforms through DL-hardware co-design.
               </div>
               <div className="mt-5">
                 <ul className="list-disc pl-5">
-                  <li>Neural network pruning & quantization & distillation</li>
-                  <li>Deep learning acceleration for applications</li>
-                  <li>Hardware-aware network architecture search & design</li>
-                  <li>Applications of deep learning on mobile and AR/VR</li>
-                  <li>New theory and fundamentals of DL-hardware co-design</li>
-                  <li>Deep learning to improve computer architecture design</li>
-                  <li>Real-time and energy-efficient deep learning systems</li>
-                  <li>Hardware accelerators for deep learning</li>
+                  <li className="py-1">Neural network pruning & quantization & distillation</li>
+                  <li className="py-1">Deep learning acceleration for applications</li>
+                  <li className="py-1">Hardware-aware network architecture search & design</li>
+                  <li className="py-1">Applications of deep learning on mobile and AR/VR</li>
+                  <li className="py-1">New theory and fundamentals of DL-hardware co-design</li>
+                  <li className="py-1">Deep learning to improve computer architecture design</li>
+                  <li className="py-1">Real-time and energy-efficient deep learning systems</li>
+                  <li className="py-1">Hardware accelerators for deep learning</li>
                 </ul>
               </div>
               <div className="mt-5 leading-8">
@@ -104,8 +108,8 @@ const IndexPage = () => {
                     <div>Workshop Date</div>
                   </div>
                   <div className="flex-1">
-                    <div className="text-red-400">Late November(TBD), 2022</div>
-                    <div>November 18, 2022</div>
+                    <div className="text-red-600">Late November (TBD), 2022</div>
+                    <div>December, 2022</div>
                     <div>TBD</div>
                     <div>February 13-14, 2023</div>
                   </div>
@@ -115,9 +119,9 @@ const IndexPage = () => {
                 <div className="mt-5 leading-8 flex">
                   <div className="flex-1 text-xl">
                     <div>Paper Submission Deadline:</div>
-                    <div className="text-base mb-3">November 4, 2022</div>
+                    <div className="text-base mb-3 text-red-600">Late November (TBD), 2022</div>
                     <div>Notification of Acceptance:</div>
-                    <div className="text-base mb-3">November 18, 2022</div>
+                    <div className="text-base mb-3">December, 2022</div>
                     <div>Camera-Reday Deadline:</div>
                     <div className="text-base mb-3">TBD</div>
                     <div>Workshop Date:</div>
@@ -126,24 +130,24 @@ const IndexPage = () => {
                 </div>
               </div>
 
-              <div className="text-3xl mt-5">Eligible Works</div>
-              <div className="mt-5"><span className="font-bold">This workshop is non-archival, and it will not have proceedings. We permit under-review or concurrent submissions.</span> We will select <span className="font-bold">Best Paper Awards</span>:</div>
+              <div className="text-3xl mt-10">Eligible Works</div>
+              <div className="mt-5 font-bold">This workshop is non-archival, and it will not have proceedings. We permit under-review or concurrent submissions. We will select Best Paper Awards.</div>
 
-              <div className="mt-5">Concretely, we ask members of the community to submit an abstract (250 words or fewer) describing the work and one or more of the following accompanying materials that describe the work in further detail. Higher quality accompanying materials improve the likelihood of acceptance and of spotlighting work with an oral presentation.</div>
+              {/* <div className="mt-5">Concretely, we ask members of the community to submit an abstract (250 words or fewer) describing the work and one or more of the following accompanying materials that describe the work in further detail. Higher quality accompanying materials improve the likelihood of acceptance and of spotlighting work with an oral presentation.</div> */}
 
               <ul className="list-disc pl-5 mt-5">
-                <li>A poster (in PDF form) presenting results of work-in-progress.</li>
-                <li>A link to a blog post (e.g., distill.pub, Medium) describing results.</li>
-                <li>A workshop paper of approximately four pages in length presenting results of work-in-progress.</li>
-                <li>A position paper with no page limit.</li>
-                <li>A published paper in the form that it was published.</li>
+                <li className="py-1">A workshop paper of approximately four pages in length.</li>
+                <li className="py-1">A position paper or survey paper with no page limit.</li>
+                <li className="py-1">A poster presenting results of work-in-progress.</li>
+                <li className="py-1">A published paper in the form that it was published.</li>
+                <li className="py-1">A link to a blog post (e.g., distill.pub, Medium) describing results.</li>
               </ul>
             </div>
           </div>
         </div>
 
         <div id="schedule" className="max-w-screen-md max-w-screen-lg mx-auto px-2 py-10 text-xl">
-          <div className="text-4xl">Agenda (Tentative)</div>
+          <div className="text-4xl">Agenda</div>
           <div className="mt-5">
             {/* <div>Rows highlighted in green are LIVE whereas rows highlighted in yellow are PRE-RECORDED. The poster session is distributed across multiple ZOOM.</div>  */}
           </div>
@@ -161,36 +165,23 @@ const IndexPage = () => {
               </div>
               <div className="flex border-b-2 mt-3 pb-3">
                 <div className="w-100">09:00am-09:30am</div>
-                <div className="flex-1 text-center">Lightning talks of invited papers and social networking of participants</div>
-                <div className="w-100">Livestream</div>
-              </div> 
-              <div className="flex border-b-2 mt-3 pb-3">
-                <div className="w-100">09:30am-10:00am</div>
                 <div className="flex-1 text-center">Invited talk 2</div>
                 <div className="w-100">Livestream</div>
               </div>
               <div className="flex border-b-2 mt-3 pb-3">
+                <div className="w-100">09:30am-10:00am</div>
+                <div className="flex-1 text-center">Poster sessions + Coffee break</div>
+                <div className="w-100">Livestream</div>
+              </div>
+              <div className="flex border-b-2 mt-3 pb-3">
                 <div className="w-100">10:00am-10:30am</div>
-                <div className="flex-1 text-center">Coffee break</div>
-                <div className="w-100">Livestream</div>
-              </div>
-              <div className="flex border-b-2 mt-3 pb-3">
-                <div className="w-100">10:30am-11:00am</div>
-                <div className="flex-1 text-center">Poster sessions</div>
-                <div className="w-100">Livestream</div>
-              </div>
-              <div className="flex border-b-2 mt-3 pb-3">
-                <div className="w-100">11:00am-11:30am</div>
                 <div className="flex-1 text-center">Invited talk 3</div>
                 <div className="w-100">Livestream</div>
               </div>
               <div className="flex border-b-2 mt-3 pb-3">
-                <div className="w-100">11:30am-12:00am</div>
+                <div className="w-100">10:30am-11:00am</div>
                 <div className="flex-1 text-center">Panel discussion</div>
                 <div className="w-100">Livestream</div>
-              </div>
-              <div className="flex border-b-2 mt-3 pb-3">
-                <div className="w-100">End</div>
               </div>
             </div>
           </div>
@@ -199,7 +190,48 @@ const IndexPage = () => {
         <div id="speakers" style={{"background":"#f5f5f5"}}>
           <div className="max-w-screen-md max-w-screen-lg mx-auto px-2 py-10">
             <div className="text-4xl">Keynote Speakers</div>
-            <div className="w-full text-center h-96 p-36 text-3xl">To Be Confirmed</div>
+            {/* <div className="w-full text-center h-96 p-36 text-3xl">To Be Confirmed</div> */}
+            <Carousel autoPlay infiniteLoop interval={3000} className="w-full text-center pt-12" 
+              showArrows={true} 
+              onChange={()=>{}} 
+              onClickItem={()=>{}} 
+              onClickThumb={()=>{}} >
+              <div className="w-full">
+                <div className="w-full md:h-96 md:flex">
+                  <div className="md:flex-1">
+                    <img className="w-48 h-96 object-cover	" 
+                      style={{"width": "75%"}} 
+                      src="https://ece.duke.edu/sites/ece.duke.edu/files/images/members/thumb_image_3767312.jpg"/>
+                  </div>
+                  <div className="md:flex-1 md:text-left pt-20">
+                    <div className="text-3xl">Yiran Chen</div>
+                    <div className="text-2xl mt-5">Duke University</div>
+                    <div className="text-2xl">Professor in the Department of Electrical and Computer Engineering</div>
+                    <div className="mt-2"><a className="text-xl text-blue-600" href="https://ece.duke.edu/faculty/yiran-chen">Personal Website</a></div>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full">
+                <div className="w-full md:h-96 md:flex">
+                  <div className="md:flex-1">
+                    <img className="w-48 h-96 object-cover	" 
+                      style={{"width": "75%"}} 
+                      src="https://www.comp.nus.edu.sg/~youy/index_files/yangyou3.png"/>
+                  </div>
+                  <div className="md:flex-1 md:text-left pt-20">
+                    <div className="text-3xl">Yang You</div>
+                    <div className="text-2xl mt-5">National University of Singapore</div>
+                    <div className="text-2xl">Presidential Young Professor in Computer Science</div>
+                    <div className="mt-2"><a className="text-xl text-blue-600" href="https://www.comp.nus.edu.sg/~youy/">Personal Website</a></div>
+                  </div> 
+                </div>
+              </div>
+              {/* <div className="w-full">
+                <div className="w-full h-96 text-3xl pt-40">
+                  To Be Confirmed
+                </div>
+              </div> */}
+            </Carousel> 
             {/* <div className="flex mt-10">
               <div className="flex-1">
                 <img className="w-full" src="https://trustlogworkshop.github.io/images/nc.jpeg"/>
