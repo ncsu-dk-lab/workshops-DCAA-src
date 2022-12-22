@@ -71,8 +71,8 @@ const IndexPage = () => {
 
           <div className="max-w-screen-md max-w-screen-lg mx-auto px-2 py-10">
             <div className="mt-5 text-xl px-3 md:px-0 md:text-justify ">
-              <div className="text-4xl">Call for Reviewers</div>
-              <div className="mt-5 leading-8">We are looking for reviewers for the first workshop on DL-Hardware Co-Design for AI Acceleration! If you would like to become a reviewer, please fill this <a className="text-blue-600" href="https://docs.google.com/forms/d/1KaQCnRqRpTo4UXkSCLxNVAovrr0cnNFW8MutD482h9c/edit">form</a>.</div> 
+              <div className="text-4xl text-red-600">Call for Reviewers</div>
+              <div className="mt-5 leading-8 text-red-600">We are looking for reviewers! If interested, please fill out this <a className="text-blue-600" href="https://docs.google.com/forms/d/1KaQCnRqRpTo4UXkSCLxNVAovrr0cnNFW8MutD482h9c/edit">form</a>. We will be selecting multiple Top Reviewer Awards.</div> 
               <div className="text-4xl mt-8">Call for Papers</div>
               <div className="mt-5 leading-8">As deep learning (DL) continues to permeate all areas of computing, algorithm engineers are increasingly relying on hardware system design solutions to improve the efficiency and performance of deep learning models. However, the vast majority of DL studies rarely consider limitations such as power/energy, memory footprint, and model size of real-world computing platforms, and even less consider the computational speed of hardware systems and their own computational characteristics. Addressing all of these metrics is critical if advances in DL are to be widely used on real device platforms and scenarios, especially those with high requirements for computational efficiencies, such as mobile devices and AR/VR. Therefore, it is desirable to design and optimize both the DL models and the hardware computing platforms. The workshop provides a great venue for the international research community to share mutual challenges and solutions between deep neural network learning and computing system platforms, with a focus on accelerating AI technologies on real system platforms through DL-hardware co-design.
               </div>
@@ -108,10 +108,10 @@ const IndexPage = () => {
                     <div>Workshop Date</div>
                   </div>
                   <div className="flex-1">
-                    <div className="text-red-600">Late November (TBD), 2022</div>
+                    <div className="text-red-600">November 30, 2022</div>
                     <div>December, 2022</div>
                     <div>TBD</div>
-                    <div>February 13-14, 2023</div>
+                    <div>February 13, 2023</div>
                   </div>
                 </div>
               </div>
@@ -119,13 +119,13 @@ const IndexPage = () => {
                 <div className="mt-5 leading-8 flex">
                   <div className="flex-1 text-xl">
                     <div>Paper Submission Deadline:</div>
-                    <div className="text-base mb-3 text-red-600">Late November (TBD), 2022</div>
+                    <div className="text-base mb-3 text-red-600">November 30, 2022</div>
                     <div>Notification of Acceptance:</div>
                     <div className="text-base mb-3">December, 2022</div>
                     <div>Camera-Reday Deadline:</div>
                     <div className="text-base mb-3">TBD</div>
                     <div>Workshop Date:</div>
-                    <div className="text-base mb-3">February 13-14, 2023</div>
+                    <div className="text-base mb-3">February 13, 2023</div>
                   </div>
                 </div>
               </div>
@@ -180,7 +180,7 @@ const IndexPage = () => {
               </div>
               <div className="flex border-b-2 mt-3 pb-3">
                 <div className="w-100">10:30am-11:00am</div>
-                <div className="flex-1 text-center">Panel discussion</div>
+                <div className="flex-1 text-center">Best Paper Presentation</div>
                 <div className="w-100">Livestream</div>
               </div>
             </div>
@@ -199,11 +199,11 @@ const IndexPage = () => {
               <div className="w-full mt-10">
                 <div className="w-full md:h-96 md:flex">
                   <div className="md:flex-1">
-                    <img className="w-48 h-96 object-cover	" 
+                    <img className="w-48 h-96 object-cover mx-auto md:ml-0" 
                       style={{"width": "75%"}} 
-                      src="https://ece.duke.edu/sites/ece.duke.edu/files/images/members/thumb_image_3767312.jpg"/>
+                      src="https://engineering.purdue.edu/ECE/Alums/OECE/2021/Images/chen-web.jpg"/>
                   </div>
-                  <div className="md:flex-1 md:text-left pt-20">
+                  <div className="md:flex-1 md:text-left pt-20 text-center">
                     <div className="text-3xl">Yiran Chen</div>
                     <div className="text-2xl mt-5">Duke University</div>
                     <div className="text-2xl">Professor in the Department of Electrical and Computer Engineering</div>
@@ -213,19 +213,20 @@ const IndexPage = () => {
               </div>
               <div className="w-full mt-10">
                 <div className="w-full md:h-96 md:flex">
-                  <div className="md:flex-1 md:text-left pt-20">
+                  <div className="md:flex-1 md:text-left pt-20 text-center mb-20 md:mb-0">
                     <div className="text-3xl">Yang You</div>
                     <div className="text-2xl mt-5">National University of Singapore</div>
                     <div className="text-2xl">Presidential Young Professor in Computer Science</div>
                     <div className="mt-2"><a className="text-xl text-blue-600" href="https://www.comp.nus.edu.sg/~youy/">Personal Website</a></div>
                   </div> 
                   <div className="md:flex-1">
-                    <img className="w-48 h-96 object-cover	" 
+                    <img className="w-48 h-96 object-cover mx-auto md:ml-0" 
                       style={{"width": "75%"}} 
                       src="https://www.comp.nus.edu.sg/~youy/index_files/yangyou3.png"/>
                   </div>
                 </div>
               </div>
+              <div className="w-full text-center h-36 p-20 text-3xl">To Be More...</div>
               {/* <div className="w-full">
                 <div className="w-full h-96 text-3xl pt-40">
                   To Be Confirmed
