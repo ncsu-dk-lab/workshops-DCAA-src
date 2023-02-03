@@ -71,8 +71,24 @@ const IndexPage = () => {
 
           <div className="max-w-screen-md max-w-screen-lg mx-auto px-2 py-10">
             <div className="mt-5 text-xl px-3 md:px-0 md:text-justify ">
-              <div className="text-4xl text-red-600">Call for Reviewers</div>
-              <div className="mt-5 leading-8 text-red-600">We are looking for reviewers! If interested, please fill out this <a className="text-blue-600" href="https://docs.google.com/forms/d/1KaQCnRqRpTo4UXkSCLxNVAovrr0cnNFW8MutD482h9c/edit">form</a>. We will be selecting multiple Top Reviewer Awards.</div> 
+              <div className="text-4xl">Accepted papers</div>
+              <ul className="list-disc pl-5 mt-5 italic text-base">
+                <li className="py-1">TinyM^2Net: A Flexible System Algorithm Co-designed Multimodal Learning Framework for Tiny Devices</li>
+                <li className="py-1">Training Low-Rank CNNs with Orthogonality From Scratch</li>
+                <li className="py-1">Self-Compressing Neural Networks</li>
+                <li className="py-1">Hardware-Efficient Adaptive Token Pruning for Vision Transformers</li>
+                <li className="py-1">Neurogenesis Dynamics-inspired Spiking Neural Network Training Acceleration</li>
+                <li className="py-1">RRNet: Towards ReLU-Reduced Neural Network for Two-party Computation Based Private Inference</li>
+                <li className="py-1">Unifying Data-Model Sparsity for Class-Imbalanced Graph Representation Learning</li>
+                <li className="py-1">Shared Information-Based Safe And Efficient Behavior Planning For Connected Autonomous Vehicles</li>
+                <li className="py-1">On-Mobile Real-Time Super-Resolution via Neural Architecture Search</li>
+                <li className="py-1">All-in-One: A Highly Representative DNN Pruning Framework for Edge Devices with Dynamic Power Management</li>
+                <li className="py-1">FP8-BERT: Post-Training Quantization for Transforme</li>
+                <li className="py-1">Towards Sparse and Low-rank Neural Networks with Hybrid Compression</li>
+              </ul>
+
+              <div className="text-4xl mt-8">Call for Reviewers</div>
+              <div className="mt-5 leading-8">We are looking for reviewers! If interested, please fill out this <a className="text-blue-600" href="https://docs.google.com/forms/d/1KaQCnRqRpTo4UXkSCLxNVAovrr0cnNFW8MutD482h9c/edit">form</a>. We will be selecting multiple Top Reviewer Awards.</div> 
               <div className="text-4xl mt-8">Call for Papers</div>
               <div className="mt-5 leading-8">As deep learning (DL) continues to permeate all areas of computing, algorithm engineers are increasingly relying on hardware system design solutions to improve the efficiency and performance of deep learning models. However, the vast majority of DL studies rarely consider limitations such as power/energy, memory footprint, and model size of real-world computing platforms, and even less consider the computational speed of hardware systems and their own computational characteristics. Addressing all of these metrics is critical if advances in DL are to be widely used on real device platforms and scenarios, especially those with high requirements for computational efficiencies, such as mobile devices and AR/VR. Therefore, it is desirable to design and optimize both the DL models and the hardware computing platforms. The workshop provides a great venue for the international research community to share mutual challenges and solutions between deep neural network learning and computing system platforms, with a focus on accelerating AI technologies on real system platforms through DL-hardware co-design.
               </div>
@@ -154,32 +170,40 @@ const IndexPage = () => {
           <div className="overflow-scroll md:overflow-auto">
             <div className="mt-10" style={{width: "1000px"}}>
               <div className="flex border-b-2 pb-3">
-                <div className="w-100">08:20am-08:30am</div>
+                <div className="w-100">08:50am-09:00am</div>
                 <div className="flex-1 text-center">Opening remarks</div>
                 <div className="w-100">Livestream</div>
               </div>
               <div className="flex border-b-2 mt-3 pb-3">
-                <div className="w-100">08:30am-09:00am</div>
-                <div className="flex-1 text-center">Invited talk 1</div>
-                <div className="w-100">Livestream</div>
-              </div>
-              <div className="flex border-b-2 mt-3 pb-3">
                 <div className="w-100">09:00am-09:30am</div>
-                <div className="flex-1 text-center">Invited talk 2</div>
+                <div className="flex-1 text-center">
+                  <di>Invited talk 1: <a className="text-blue-600" href="https://ece.duke.edu/faculty/yiran-chen">Yiran Chen</a></di>
+                </div>
                 <div className="w-100">Livestream</div>
               </div>
               <div className="flex border-b-2 mt-3 pb-3">
                 <div className="w-100">09:30am-10:00am</div>
-                <div className="flex-1 text-center">Poster sessions + Coffee break</div>
+                <div className="flex-1 text-center">
+                  <div>Invited talk 2: <a className="text-blue-600" href="https://www.comp.nus.edu.sg/~youy/">Yang You</a></div>
+                  <div className="mt-5 text-gray-600">Colossal-AI: A Unified Deep Learning System For Large-Scale Parallel Training</div>
+                </div>
                 <div className="w-100">Livestream</div>
               </div>
               <div className="flex border-b-2 mt-3 pb-3">
                 <div className="w-100">10:00am-10:30am</div>
-                <div className="flex-1 text-center">Invited talk 3</div>
+                <div className="flex-1 text-center">Poster sessions + Coffee break</div>
                 <div className="w-100">Livestream</div>
               </div>
               <div className="flex border-b-2 mt-3 pb-3">
                 <div className="w-100">10:30am-11:00am</div>
+                <div className="flex-1 text-center">
+                  <div>Invited talk 3: <a className="text-blue-600" href="https://coe.northeastern.edu/Research/rcl/members/MEL/index.html">Miriam Leeser</a></div>
+                  <div className="mt-5 text-gray-600">Machine Learning on FPGAs in the Open Cloud Testbed</div>
+                </div>
+                <div className="w-100">Livestream</div>
+              </div>
+              <div className="flex border-b-2 mt-3 pb-3">
+                <div className="w-100">11:00am-11:30am</div>
                 <div className="flex-1 text-center">Best Paper Presentation</div>
                 <div className="w-100">Livestream</div>
               </div>
@@ -207,17 +231,18 @@ const IndexPage = () => {
                     <div className="text-3xl">Yiran Chen</div>
                     <div className="text-2xl mt-5">Duke University</div>
                     <div className="text-2xl">Professor in the Department of Electrical and Computer Engineering</div>
-                    <div className="mt-2"><a className="text-xl text-blue-600" href="https://ece.duke.edu/faculty/yiran-chen">Personal Website</a></div>
+                    <div className="mt-2"><a className="text-xl underline" href="https://ece.duke.edu/faculty/yiran-chen">Personal Website</a></div>
                   </div>
                 </div>
               </div>
               <div className="w-full mt-10">
                 <div className="w-full md:h-96 md:flex">
-                  <div className="md:flex-1 md:text-left pt-20 text-center mb-20 md:mb-0">
+                  <div className="md:flex-1 md:text-left pt-10 text-center mb-20 md:mb-0">
                     <div className="text-3xl">Yang You</div>
                     <div className="text-2xl mt-5">National University of Singapore</div>
                     <div className="text-2xl">Presidential Young Professor in Computer Science</div>
-                    <div className="mt-2"><a className="text-xl text-blue-600" href="https://www.comp.nus.edu.sg/~youy/">Personal Website</a></div>
+                    <div className="mt-2"><a className="text-xl underline" href="https://www.comp.nus.edu.sg/~youy/">Personal Website</a></div>
+                    <div className="text-2xl mt-10"><span className="text-blue-600">Talk Title:</span> Colossal-AI: A Unified Deep Learning System For Large-Scale Parallel Training</div>
                   </div> 
                   <div className="md:flex-1">
                     <img className="w-48 h-96 object-cover mx-auto md:ml-0" 
@@ -226,7 +251,23 @@ const IndexPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full text-center h-36 p-20 text-3xl">To Be More...</div>
+              <div className="w-full mt-10">
+                <div className="w-full md:h-96 md:flex">
+                  <div className="md:flex-1">
+                    <img className="w-48 h-96 object-cover mx-auto md:ml-0" 
+                      style={{"width": "75%"}} 
+                      src="https://nets-vo.org/wp-content/uploads/2022/03/Leeser.jpeg"/>
+                  </div>
+                  <div className="md:flex-1 md:text-left pt-10 text-center">
+                    <div className="text-3xl">Miriam Leeser</div>
+                    <div className="text-2xl mt-5">Northeastern University</div>
+                    <div className="text-2xl">Professor in the Department of Electrical and Computer Engineering</div>
+                    <div className="mt-2"><a className="text-xl underline" href="https://coe.northeastern.edu/Research/rcl/members/MEL/index.html">Personal Website</a></div>
+                    <div className="text-2xl mt-10"><span className="text-blue-600">Talk Title:</span> Machine Learning on FPGAs in the Open Cloud Testbed</div>
+                  </div>
+                </div>
+              </div>
+              {/* <div className="w-full text-center h-36 p-20 text-3xl">To Be More...</div> */}
               {/* <div className="w-full">
                 <div className="w-full h-96 text-3xl pt-40">
                   To Be Confirmed
@@ -353,7 +394,7 @@ const IndexPage = () => {
 
         <div className="text-center py-10 text-sm text-gray-300 bg-black">
           <div>© 2022 NCSU DK Lab, All rights reserved</div>
-          <div>(Last update: Qct 9, 2022.)</div>
+          <div>(Last update: Jan 23, 2023.)</div>
         </div>
       </div>
     </main>
