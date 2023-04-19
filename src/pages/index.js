@@ -51,7 +51,7 @@ const IndexPage = () => {
       <div className="pt-16">
         <div className="flex flex-row ">
           <div className="w-full" style={{
-            "backgroundImage": 'url("https://aaai.org/Conferences/AAAI-23/wp-content/uploads/2022/06/AAAI-23-Website-Banner_2560x593.png")',
+            "backgroundImage": 'url("https://aaai-23.aaai.org/wp-content/uploads/2022/12/AAAI-23-Website-Banner_2560x593-min.png")',
             "height": "50vh",
             "backgroundRepeat": "no-repeat",
             "backgroundPosition": "center",
@@ -177,15 +177,16 @@ const IndexPage = () => {
               <div className="flex border-b-2 mt-3 pb-3">
                 <div className="w-100">09:00am-09:30am</div>
                 <div className="flex-1 text-center">
-                  <di>Invited talk 1: <a className="text-blue-600" href="https://ece.duke.edu/faculty/yiran-chen">Yiran Chen</a></di>
+                  <div>Invited talk 1: <a className="text-blue-600" href="https://ece.duke.edu/faculty/yiran-chen">Yiran Chen</a></div>
+                  <div className="mt-5 text-gray-600">Cross-Layer Optimization for AI with Algorithm-Hardware Co-design</div>
                 </div>
                 <div className="w-100">Livestream</div>
               </div>
               <div className="flex border-b-2 mt-3 pb-3">
                 <div className="w-100">09:30am-10:00am</div>
                 <div className="flex-1 text-center">
-                  <div>Invited talk 2: <a className="text-blue-600" href="https://www.comp.nus.edu.sg/~youy/">Yang You</a></div>
-                  <div className="mt-5 text-gray-600">Colossal-AI: A Unified Deep Learning System For Large-Scale Parallel Training</div>
+                  <div>Invited talk 2: <a className="text-blue-600" href="https://coe.northeastern.edu/Research/rcl/members/MEL/index.html">Miriam Leeser</a></div>
+                  <div className="mt-5 text-gray-600">Machine Learning on FPGAs in the Open Cloud Testbed</div>
                 </div>
                 <div className="w-100">Livestream</div>
               </div>
@@ -197,8 +198,8 @@ const IndexPage = () => {
               <div className="flex border-b-2 mt-3 pb-3">
                 <div className="w-100">10:30am-11:00am</div>
                 <div className="flex-1 text-center">
-                  <div>Invited talk 3: <a className="text-blue-600" href="https://coe.northeastern.edu/Research/rcl/members/MEL/index.html">Miriam Leeser</a></div>
-                  <div className="mt-5 text-gray-600">Machine Learning on FPGAs in the Open Cloud Testbed</div>
+                  <div>Invited talk 3: <a className="text-blue-600" href="https://www.comp.nus.edu.sg/~youy/">Yang You</a></div>
+                  <div className="mt-5 text-gray-600">Colossal-AI: A Unified Deep Learning System For Large-Scale Parallel Training</div> 
                 </div>
                 <div className="w-100">Livestream</div>
               </div>
@@ -227,37 +228,17 @@ const IndexPage = () => {
                       style={{"width": "75%"}} 
                       src="https://engineering.purdue.edu/ECE/Alums/OECE/2021/Images/chen-web.jpg"/>
                   </div>
-                  <div className="md:flex-1 md:text-left pt-20 text-center">
+                  <div className="md:flex-1 md:text-left pt-10 text-center">
                     <div className="text-3xl">Yiran Chen</div>
                     <div className="text-2xl mt-5">Duke University</div>
                     <div className="text-2xl">Professor in the Department of Electrical and Computer Engineering</div>
                     <div className="mt-2"><a className="text-xl underline" href="https://ece.duke.edu/faculty/yiran-chen">Personal Website</a></div>
+                    <div className="text-2xl mt-10"><span className="text-blue-600">Talk Title:</span> Cross-Layer Optimization for AI with Algorithm-Hardware Co-design</div>
                   </div>
                 </div>
               </div>
               <div className="w-full mt-10">
                 <div className="w-full md:h-96 md:flex">
-                  <div className="md:flex-1 md:text-left pt-10 text-center mb-20 md:mb-0">
-                    <div className="text-3xl">Yang You</div>
-                    <div className="text-2xl mt-5">National University of Singapore</div>
-                    <div className="text-2xl">Presidential Young Professor in Computer Science</div>
-                    <div className="mt-2"><a className="text-xl underline" href="https://www.comp.nus.edu.sg/~youy/">Personal Website</a></div>
-                    <div className="text-2xl mt-10"><span className="text-blue-600">Talk Title:</span> Colossal-AI: A Unified Deep Learning System For Large-Scale Parallel Training</div>
-                  </div> 
-                  <div className="md:flex-1">
-                    <img className="w-48 h-96 object-cover mx-auto md:ml-0" 
-                      style={{"width": "75%"}} 
-                      src="https://www.comp.nus.edu.sg/~youy/index_files/yangyou3.png"/>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full mt-10">
-                <div className="w-full md:h-96 md:flex">
-                  <div className="md:flex-1">
-                    <img className="w-48 h-96 object-cover mx-auto md:ml-0" 
-                      style={{"width": "75%"}} 
-                      src="https://nets-vo.org/wp-content/uploads/2022/03/Leeser.jpeg"/>
-                  </div>
                   <div className="md:flex-1 md:text-left pt-10 text-center">
                     <div className="text-3xl">Miriam Leeser</div>
                     <div className="text-2xl mt-5">Northeastern University</div>
@@ -265,6 +246,27 @@ const IndexPage = () => {
                     <div className="mt-2"><a className="text-xl underline" href="https://coe.northeastern.edu/Research/rcl/members/MEL/index.html">Personal Website</a></div>
                     <div className="text-2xl mt-10"><span className="text-blue-600">Talk Title:</span> Machine Learning on FPGAs in the Open Cloud Testbed</div>
                   </div>
+                  <div className="md:flex-1">
+                    <img className="w-48 h-96 object-cover mx-auto md:ml-0" 
+                      style={{"width": "75%"}} 
+                      src="https://nets-vo.org/wp-content/uploads/2022/03/Leeser.jpeg"/>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full mt-10">
+                <div className="w-full md:h-96 md:flex">
+                  <div className="md:flex-1">
+                    <img className="w-48 h-96 object-cover mx-auto md:ml-0" 
+                      style={{"width": "75%"}} 
+                      src="https://www.comp.nus.edu.sg/~youy/index_files/yangyou3.png"/>
+                  </div>
+                  <div className="md:flex-1 md:text-left pt-10 text-center mb-20 md:mb-0">
+                    <div className="text-3xl">Yang You</div>
+                    <div className="text-2xl mt-5">National University of Singapore</div>
+                    <div className="text-2xl">Presidential Young Professor in Computer Science</div>
+                    <div className="mt-2"><a className="text-xl underline" href="https://www.comp.nus.edu.sg/~youy/">Personal Website</a></div>
+                    <div className="text-2xl mt-10"><span className="text-blue-600">Talk Title:</span> Colossal-AI: A Unified Deep Learning System For Large-Scale Parallel Training</div>
+                  </div> 
                 </div>
               </div>
               {/* <div className="w-full text-center h-36 p-20 text-3xl">To Be More...</div> */}
